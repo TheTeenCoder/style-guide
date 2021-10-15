@@ -1,0 +1,16 @@
+{
+  "name": "windi",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "vite-plugin-windicss": "^1.4.10",
+    "windicss": "^3.1.9"
+  }
+}

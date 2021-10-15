@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="windi.css"/> -->
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="p-5rem text-xs">
+      <div class="flex flex-col">
+        <h1 class="">Buttons:</h1>
+        <div class="flex space-x-1rem" id="buttons-1">
+          <button class="btn">Button</button>
+          <button class="btn bg-blue-500 text-white hover:bg-blue-600">
+            Button
+          </button>
+          <button
+            class="
+              btn
+              bg-blue-500
+              text-white
+              hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-500
+            "
+          >
+            Button
+          </button>
+          <button
+            class="
+              btn
+              bg-red-500
+              text-white
+              hover:bg-gradient-to-r hover:from-red-500 hover:to-yellow-500
+            "
+          >
+            Button
+          </button>
+        </div>
+        <div class="flex space-x-1rem" id="buttons-transitions">
+          <button
+            class="
+              btn
+              bg-blue-500
+              text-white
+              hover:bg-blue-700 hover:transition-colors hover:duration-1000
+            "
+          >
+            Button
+          </button>
+          <button
+            class="
+              btn
+              transform
+              duration-300
+              bg-blue-500
+              text-white
+              hover:bg-gradient-to-r
+              hover:from-blue-500
+              hover:to-green-500
+              hover:scale-110
+            "
+          >
+            Button
+          </button>
+          <button
+            class="
+              btn
+              bg-red-500
+              text-white
+              hover:bg-gradient-to-r
+              hover:from-red-500
+              hover:to-yellow-500
+              hover:skew-y-3
+              transform
+              duration-200
+            "
+          >
+            Button
+          </button>
+          <button
+            class="
+              btn
+              bg-yellow-500
+              text-white
+              hover:-translate-y-1
+              transform
+              transition-all
+              duration-500
+            "
+          >
+            Button
+          </button>
+          <button
+            class="
+              btn
+              text-white
+              transition-all
+              duration-500
+              bg-gradient-to-br
+              to-green-500
+              via-blue-500
+              from-purple-500
+              bg-size-200 bg-pos-0
+              hover:bg-pos-100
+            "
+          >
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col mt-10rem" id="inputs">
+          <h1 class="">Inputs:</h1>
+          <div class="flex flex-col space-y-1rem" id="inputs-1">
+            <input class="w-10rem input" />
+            <textarea
+              class="
+                w-10rem
+                h-10rem
+                input
+              "
+            ></textarea>
+            <input class="" type="checkbox" />
+          </div>
+        </div>
+        <div class="flex flex-col space-y-1rem mt-10rem" id="alerts-1">
+          <h1>Alerts:</h1>
+          <div
+            class="
+              flex
+              justify-center
+              p-2
+              rounded-lg
+              items-center
+              text-white
+              bg-red-500
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+              />
+            </svg>
+            Warning!
+          </div>
+          <div
+            class="
+              flex
+              justify-center
+              p-2
+              rounded-lg
+              items-center
+              text-white
+              bg-green-500
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            Success!
+          </div>
+        </div>
+        <div class="flex flex-col mt-5rem space-y-0.5rem">
+          <h1>Typography:</h1>
+          <div class="text-8rem">H1 text.</div>
+          <div class="text-6rem">H2 text.</div>
+          <div class="text-4rem">H3 text.</div>
+          <div class="text-2rem">H4 text.</div>
+          <div class="text-1.5rem">H5 text.</div>
+          <div class="text-1rem">H6 text.</div>
+          <div class="text-0.8rem">P text.</div>
+        </div>
+        <div  class="flex flex-col mt-5rem space-y-0.5rem">
+          <h1>Select:</h1>
+          <select class="select w-5rem">
+            <option>Cats</option>
+            <option>Dogs</option>
+          </select>
+        </div>
+        <h1 class="big">Test</h1>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
